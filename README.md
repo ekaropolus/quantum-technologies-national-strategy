@@ -8,6 +8,14 @@ This repository is the companion research archive for three manuscripts on quant
 
 The manuscripts were prepared for the Quantum Technologies track of the twenty-third edition of the Global Information Technology Management Association Annual Conference, Monterrey, Mexico, May 6-8, 2026. Edgar Antonio Valdés Porras serves as Track Chair for the Quantum Technologies track.
 
+## Live Presentation
+
+The Reveal.js presentation is published through GitHub Pages:
+
+https://ekaropolus.github.io/quantum-technologies-national-strategy/
+
+The browser deck includes speaker notes, automatic narration, narration speed controls, paper-section badges, and a references slide.
+
 ## Repository Contents
 
 - `*.md`: manuscript sources in Pandoc Markdown.

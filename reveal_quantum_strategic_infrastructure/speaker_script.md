@@ -4,6 +4,8 @@
 
 ### Slide 1: Title
 
+*Related paper sections: Abstract; 1. Introduction; 15. Conclusion.*
+
 Good morning. My name is Edgar Valdes, from Hadox Research Labs. This talk presents quantum technologies as strategic infrastructure: not only as a scientific frontier, and not only as a market opportunity, but as a national capability problem.
 
 The argument is simple. Countries should not wait until universal fault-tolerant quantum computers are commercially mature before acting. The relevant question for national strategy is not whether a country owns the largest quantum computer. The relevant question is whether its institutions can understand, test, secure, procure, regulate, and eventually produce quantum technologies.
@@ -11,6 +13,8 @@ The argument is simple. Countries should not wait until universal fault-tolerant
 For that reason, I will focus on evidence, adoption pathways, and a research agenda for the 2025 to 2035 horizon. The emphasis is on absorptive capacity: the ability to turn fragile and specialized quantum effects into reliable public, scientific, industrial, and security capabilities.
 
 ### Slide 2: From First To Second Quantum Revolution
+
+*Related paper section: 2.1 From Quantum Revolution to Infrastructure.*
 
 The first point is historical. Quantum technology is not entirely new. The first quantum revolution gave us technologies such as transistors, lasers, atomic clocks, magnetic resonance imaging, and many of the components that made modern computing and communications possible.
 
@@ -20,6 +24,8 @@ This distinction matters for policy. If we treat quantum as a single device cate
 
 ### Slide 3: Acceleration And Structural Unevenness
 
+*Related paper sections: 3. Data and Methods; 4. Quantitative Evidence.*
+
 The empirical record shows two things at the same time: rapid acceleration and strong concentration. Governments had announced approximately 55.7 billion dollars in public quantum commitments by October 2025. The OECD Fundstat database identified more than 11.2 billion dollars in quantum-related research and development awards during 2015 to 2023. OECD-EPO patent mapping identified about 31,700 quantum patent families between 2005 and 2024.
 
 This is not a marginal scientific domain anymore. It is now part of industrial policy, cybersecurity planning, advanced manufacturing, defense innovation, and research infrastructure.
@@ -27,6 +33,8 @@ This is not a marginal scientific domain anymore. It is now part of industrial p
 But the acceleration is uneven. Publications, patents, firms, testbeds, and funding are concentrated in a limited number of countries and regions. That creates a strategic asymmetry: late movers may still access cloud quantum services, but without domestic expertise they risk becoming passive consumers of infrastructure designed, benchmarked, secured, and governed elsewhere.
 
 ### Slide 4: Awareness-Readiness Gap
+
+*Related paper sections: 2.3 The Strategic Error; 5. Results; OECD readiness discussion.*
 
 The next problem is adoption. The evidence suggests a strong awareness-readiness gap. Many executives and governments expect quantum technologies to matter, but relatively few institutions have budgets, migration plans, validated use cases, procurement criteria, or technical teams capable of evaluating claims.
 
@@ -36,6 +44,8 @@ For enterprises and governments, the correct question is not, “When will quant
 
 ### Slide 5: Quantum Adoption As Absorptive Capacity
 
+*Related paper sections: 2.2 Adoption Theory; 10. Toward a National Quantum Capability Model.*
+
 This slide presents the core adoption model. Quantum adoption is an absorptive capacity problem. Hardware capability enters an organization through filters: scientific literacy, data infrastructure, procurement routines, cybersecurity architecture, standards, workforce development, and sector-specific knowledge.
 
 Raw hardware capability cannot bypass these filters. A country can buy access to quantum cloud platforms and still lack the ability to select meaningful problems, compare classical and quantum baselines, interpret noise, validate results, or translate experiments into production workflows.
@@ -43,6 +53,8 @@ Raw hardware capability cannot bypass these filters. A country can buy access to
 Therefore, the policy objective should not be only to purchase technology. It should be to cultivate institutions that can learn from technology. That means training researchers and engineers, connecting universities with industry, funding testbeds, developing standards capacity, and creating public-sector demand in areas where quantum technologies map onto national problems.
 
 ### Slide 6: Layered Capability Stack
+
+*Related paper section: 5. Results: Adoption Pathways by Technology Domain.*
 
 A useful national strategy separates the quantum ecosystem into layers. Post-quantum cryptography has immediate relevance because it protects digital infrastructure against future cryptographically relevant quantum computers. Quantum sensing is nearer-term in specific domains because it can improve measurement in navigation, geology, health, environment, and industrial systems. Quantum communication is specialized infrastructure, particularly relevant where security and trusted networks are strategic priorities. Quantum computing remains high optionality: potentially transformative, but still constrained by error correction, scale, noise, and application-level benchmarking.
 
@@ -52,6 +64,8 @@ For a nation, this means sequencing matters. Immediate work should focus on secu
 
 ### Slide 7: Post-Quantum Cryptography
 
+*Related paper sections: 5.4 Post-Quantum Cryptography; 7.5 Cybersecurity.*
+
 Post-quantum cryptography is the least optional part of the agenda. The logic is captured by the time inequality shown here: if the shelf life of sensitive data plus the migration time of cryptographic systems is greater than the time to a capable quantum computer, then systems are already vulnerable today.
 
 This is why “harvest now, decrypt later” is a present risk. An adversary can collect encrypted data now and decrypt it later when quantum capability becomes sufficient. The response is not to wait for quantum computers. The response is to inventory cryptographic assets, identify vulnerable protocols, prioritize critical systems, and migrate toward post-quantum standards.
@@ -59,6 +73,8 @@ This is why “harvest now, decrypt later” is a present risk. An adversary can
 NIST has already finalized post-quantum cryptographic standards. That changes the governance problem. Post-quantum migration is no longer speculative research; it is a digital infrastructure transition. For governments, finance, health, energy, telecommunications, and critical records, this should be treated as a national security and continuity issue.
 
 ### Slide 8: Logical-Qubit Economics
+
+*Related paper section: 6. Hardware Comparison and Logical-Qubit Economics.*
 
 For quantum computing, the strategic evaluation metric must shift from physical qubits to logical-qubit economics. Public discussion often focuses on qubit counts, but physical qubits alone tell us little about useful computation. What matters is error correction, gate fidelity, coherence, connectivity, speed, control systems, and the overhead required to produce stable logical qubits.
 
@@ -68,6 +84,8 @@ The policy implication is clear: governments should avoid hardware nationalism b
 
 ### Slide 9: HPC-QC Workflow
 
+*Related paper section: 8. High-Performance Computing and Quantum Computing.*
+
 Quantum computing should be understood as complementary to high-performance computing, not as a replacement for it. In realistic scientific and industrial workflows, classical systems will continue to handle data preparation, orchestration, simulation, optimization loops, validation, visualization, and error mitigation.
 
 The quantum processor, when useful, enters as a specialized accelerator or subroutine. That means national quantum strategy should be linked to national supercomputing strategy. Countries with HPC centers, scientific computing teams, and domain experts are better positioned to test quantum algorithms rigorously.
@@ -75,6 +93,8 @@ The quantum processor, when useful, enters as a specialized accelerator or subro
 This matters especially for Mexico and other emerging technology economies. The near-term objective should not be to replicate every hardware race. A more defensible strategy is to build hybrid HPC-QC capability: access to quantum devices, strong classical infrastructure, trained users, reproducible benchmarks, and application domains where the country has real scientific or industrial demand.
 
 ### Slide 10: Application Domains
+
+*Related paper section: 7. Application Domains: Promise, Evidence, and Critique.*
 
 This slide is a warning against naive application claims. Scientific relevance does not automatically produce enterprise adoption. Chemistry and materials science are promising because quantum systems are naturally difficult to simulate classically. Optimization is important because many industries face complex allocation problems. Finance is interested in risk, portfolios, and Monte Carlo methods. Machine learning is an active research area.
 
@@ -84,6 +104,8 @@ Therefore, national programs should fund application testbeds, but with discipli
 
 ### Slide 11: Seven-Pillar Capability Model
 
+*Related paper section: 10. Toward a National Quantum Capability Model.*
+
 The seven-pillar model separates operational readiness from rhetorical innovation policy. The pillars are: scientific frontier, security transition through post-quantum cryptography, sensing and metrology, HPC-QC computing access, workforce, standards and procurement, and industrial position.
 
 The middle of the diagram is the key point. A nation cannot rely only on PhDs and hardware announcements. It also needs technicians, control-system engineers, cybersecurity professionals, procurement officers, standards experts, and sectoral institutions able to absorb quantum tools.
@@ -91,6 +113,8 @@ The middle of the diagram is the key point. A nation cannot rely only on PhDs an
 This “missing middle” is often underfunded. Countries invest in frontier science and speeches, but neglect the infrastructure that allows knowledge to become capability. A serious quantum strategy should therefore fund labs, testbeds, curriculum, certification, procurement frameworks, and shared infrastructure that allow many institutions to learn together.
 
 ### Slide 12: National Roadmap 2025-2035
+
+*Related paper sections: 11. Strategic Roadmap, 2025-2035; 14. Policy and Enterprise Recommendations.*
 
 The roadmap proposes staged preparation. From 2025 to 2027, the priority should be preparation and security: post-quantum cryptography inventories, access agreements, workforce curriculum, and sensing feasibility studies. From 2027 to 2030, the priority should be testbeds and pilots: sensing pilots, cryptographic migration, benchmark labs, and justified quantum computing workflows. From 2030 to 2035, the priority should be selective scaling: operational sensing, quantum networks where justified, logical-qubit readiness, and frontier research.
 
@@ -100,6 +124,8 @@ For a nation, this roadmap is practical because it does not require betting ever
 
 ### Slide 13: Six Strategic Errors
 
+*Related paper section: 13. Discussion: What a Serious Quantum Strategy Must Avoid.*
+
 There are six recurring strategic errors to avoid. The first is waiting: delaying action until fault-tolerant machines arrive. The second is hardware nationalism: equating strategy with owning a computer without a trained workforce or use cases. The third is confusing quantum key distribution with post-quantum cryptography; these are different responses to different security problems.
 
 The fourth is treating quantum cloud access as neutral. Cloud access is useful, but it can externalize experimentation, benchmarking, and strategic learning if institutions do not build internal capacity. The fifth is accepting baseless advantage claims. Quantum advantage must be demonstrated against strong classical alternatives and relevant workloads. The sixth is underfunding the missing middle: technicians, standards, procurement, cyber migration, and operational testbeds.
@@ -108,6 +134,8 @@ These errors matter because quantum strategy will be judged not by ambition, but
 
 ### Slide 14: Closing Claim
 
+*Related paper section: 15. Conclusion.*
+
 I will close with the central thesis. Quantum readiness is a cultivated institutional capability, not a hardware purchase.
 
 Quantum effects are fragile. Turning them into public capability requires infrastructure, standards, skills, governance, procurement, cybersecurity, scientific discipline, and sectoral demand. A successful strategy is therefore not simply a race toward larger devices. It is a process of converting fragile quantum effects into reliable systems that can serve public purposes.
@@ -115,6 +143,8 @@ Quantum effects are fragile. Turning them into public capability requires infras
 For countries designing their next decade of research and technology policy, the priority should be absorptive capacity. Begin now with post-quantum cryptography, sensing pilots, workforce, standards, and HPC-QC testbeds. Build the institutions that can evaluate quantum claims rigorously. Then, as quantum hardware matures, the country will not be a spectator. It will be prepared to use, govern, and eventually produce quantum technologies.
 
 ### Slide 15: References And Repository
+
+*Related paper sections: References; Data Availability; Code Availability.*
 
 This final slide points to the evidence base behind the talk and to the public repository where the manuscript, figures, bibliography, presentation materials, and supporting files are maintained.
 

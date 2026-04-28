@@ -30,6 +30,7 @@ The current version loads Reveal.js from a CDN. If an offline version is needed,
 - A rehearsal script is available in `speaker_script.md` and has also been inserted into the Reveal.js speaker notes.
 - The final references slide is editable HTML and includes the Hadox Research Labs mark at presentation scale.
 - The paper-to-presentation connection is documented in `paper_slide_map.md`; each slide's speaker notes also identify the related paper section.
+- The main slide view includes a compact `Paper: §...` badge on each content slide.
 - Presentation styling is in `theme.css`.
 - Reveal.js configuration is in `deck.js`.
 

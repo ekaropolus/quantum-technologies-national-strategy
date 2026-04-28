@@ -23,7 +23,7 @@ The current version loads Reveal.js from a CDN. If an offline version is needed,
 ## Edit
 
 - Slide order and notes are in `index.html`.
-- Visual slide images are in `assets/slides/`.
+- Cleaned visual slide images are in `assets/slides_clean/`; the original extracted images are preserved in `assets/slides/`.
 - Presentation styling is in `theme.css`.
 - Reveal.js configuration is in `deck.js`.
 

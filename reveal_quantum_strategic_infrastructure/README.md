@@ -28,6 +28,7 @@ The current version loads Reveal.js from a CDN. If an offline version is needed,
 - Cleaned visual slide images are in `assets/slides_clean/`; the original extracted images are preserved in `assets/slides/`.
 - The Hadox Research Labs SVG mark is stored in `assets/brand/` and applied as an HTML/CSS overlay, so it can be changed without regenerating slide images.
 - A rehearsal script is available in `speaker_script.md` and has also been inserted into the Reveal.js speaker notes.
+- The final references slide is editable HTML and includes the Hadox Research Labs mark at presentation scale.
 - Presentation styling is in `theme.css`.
 - Reveal.js configuration is in `deck.js`.
 

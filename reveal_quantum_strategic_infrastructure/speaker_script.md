@@ -113,3 +113,11 @@ I will close with the central thesis. Quantum readiness is a cultivated institut
 Quantum effects are fragile. Turning them into public capability requires infrastructure, standards, skills, governance, procurement, cybersecurity, scientific discipline, and sectoral demand. A successful strategy is therefore not simply a race toward larger devices. It is a process of converting fragile quantum effects into reliable systems that can serve public purposes.
 
 For countries designing their next decade of research and technology policy, the priority should be absorptive capacity. Begin now with post-quantum cryptography, sensing pilots, workforce, standards, and HPC-QC testbeds. Build the institutions that can evaluate quantum claims rigorously. Then, as quantum hardware matures, the country will not be a spectator. It will be prepared to use, govern, and eventually produce quantum technologies.
+
+### Slide 15: References And Repository
+
+This final slide points to the evidence base behind the talk and to the public repository where the manuscript, figures, bibliography, presentation materials, and supporting files are maintained.
+
+The references shown here are not the complete bibliography of the article. They are the anchor sources for the main argument: quantum technology roadmapping, NISQ computing, sensing, post-quantum cryptography, quantum networking, machine learning, innovation systems, and national policy data.
+
+I invite comments on the paper, the presentation framing, and the roadmap logic through the repository or direct follow-up.

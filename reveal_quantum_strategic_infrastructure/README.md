@@ -18,6 +18,8 @@ Then open:
 http://localhost:8088
 ```
 
+Use arrow keys to navigate. Press `S` to open Reveal.js speaker view with notes. If the browser blocks the speaker view, allow pop-ups for `127.0.0.1` or `localhost`.
+
 The current version loads Reveal.js from a CDN. If an offline version is needed, vendor the Reveal.js assets locally and update the paths in `index.html`.
 
 ## Edit

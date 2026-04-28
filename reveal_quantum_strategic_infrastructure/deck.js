@@ -10,5 +10,6 @@ Reveal.initialize({
   maxScale: 2.0,
   transition: "fade",
   backgroundTransition: "fade",
-  pdfSeparateFragments: false
+  pdfSeparateFragments: false,
+  plugins: [RevealNotes]
 });

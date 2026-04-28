@@ -15,6 +15,17 @@
     <span>Edgar Valdés · Hadox Research Labs</span>
   </div>
   <img class="hadox-mark" src="assets/brand/hadox-research-labs-logo-black.svg" alt="Hadox Research Labs">
+  <div class="narration-controls" aria-label="Narration controls">
+    <button type="button" data-narration-current>Narrate</button>
+    <button type="button" data-narration-auto>Auto</button>
+    <button type="button" data-narration-stop>Stop</button>
+    <select data-narration-voice aria-label="Narration voice"></select>
+    <label>
+      Rate
+      <input type="range" data-narration-rate min="0.75" max="1.15" step="0.05" value="0.9">
+    </label>
+    <span data-narration-status>Loading</span>
+  </div>
 
   <div class="reveal">
     <div class="slides">
@@ -243,5 +254,6 @@
   <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/notes/notes.js"></script>
   <script src="deck.js"></script>
+  <script src="narration.js"></script>
 </body>
 </html>

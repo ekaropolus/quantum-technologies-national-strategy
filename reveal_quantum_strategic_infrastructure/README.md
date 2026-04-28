@@ -20,6 +20,13 @@ http://localhost:8088
 
 Use arrow keys to navigate. Press `S` to open Reveal.js speaker view with notes. If the browser blocks the speaker view, allow pop-ups for `127.0.0.1` or `localhost`.
 
+Narration controls are available in the top-left corner:
+
+- `Narrate` reads the current slide notes aloud.
+- `Auto` reads from the current slide and advances automatically.
+- `Stop` cancels narration.
+- Keyboard shortcuts: `N` narrates the current slide, `A` starts auto narration, and `X` stops.
+
 The current version loads Reveal.js from a CDN. If an offline version is needed, vendor the Reveal.js assets locally and update the paths in `index.html`.
 
 ## Edit
@@ -31,6 +38,7 @@ The current version loads Reveal.js from a CDN. If an offline version is needed,
 - The final references slide is editable HTML and includes the Hadox Research Labs mark at presentation scale.
 - The paper-to-presentation connection is documented in `paper_slide_map.md`; each slide's speaker notes also identify the related paper section.
 - The main slide view includes a compact `Paper: §...` badge on each content slide.
+- Automatic browser narration is implemented in `narration.js` using the Web Speech API.
 - Presentation styling is in `theme.css`.
 - Reveal.js configuration is in `deck.js`.
 

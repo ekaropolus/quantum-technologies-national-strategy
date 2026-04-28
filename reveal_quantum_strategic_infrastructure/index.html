@@ -22,7 +22,10 @@
     <select data-narration-voice aria-label="Narration voice"></select>
     <label>
       Rate
-      <input type="range" data-narration-rate min="0.75" max="1.15" step="0.05" value="0.9">
+      <button type="button" data-narration-slower aria-label="Slower narration">-</button>
+      <input type="range" data-narration-rate min="0.75" max="2" step="0.05" value="0.95">
+      <button type="button" data-narration-faster aria-label="Faster narration">+</button>
+      <output data-narration-rate-value>0.95x</output>
     </label>
     <span data-narration-status>Loading</span>
   </div>

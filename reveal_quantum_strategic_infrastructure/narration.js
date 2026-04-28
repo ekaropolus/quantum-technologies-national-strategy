@@ -9,6 +9,7 @@
   const status = controls ? controls.querySelector("[data-narration-status]") : null;
   const voiceSelect = controls ? controls.querySelector("[data-narration-voice]") : null;
   const rateInput = controls ? controls.querySelector("[data-narration-rate]") : null;
+  const rateValue = controls ? controls.querySelector("[data-narration-rate-value]") : null;
 
   function setStatus(text) {
     if (status) status.textContent = text;
@@ -31,6 +32,23 @@
   function selectedVoice() {
     if (!voiceSelect || !voiceSelect.value) return null;
     return state.voices.find((voice) => voice.name === voiceSelect.value) || null;
+  }
+
+  function rate() {
+    return rateInput ? Number(rateInput.value) : 0.95;
+  }
+
+  function updateRateLabel() {
+    if (rateValue) rateValue.textContent = `${rate().toFixed(2).replace(/0$/, "")}x`;
+  }
+
+  function adjustRate(delta) {
+    if (!rateInput) return;
+    const min = Number(rateInput.min);
+    const max = Number(rateInput.max);
+    const next = Math.min(max, Math.max(min, rate() + delta));
+    rateInput.value = next.toFixed(2);
+    updateRateLabel();
   }
 
   function populateVoices() {
@@ -69,7 +87,7 @@
     window.speechSynthesis.cancel();
     const utterance = new SpeechSynthesisUtterance(text);
     utterance.lang = "en-US";
-    utterance.rate = rateInput ? Number(rateInput.value) : 0.92;
+    utterance.rate = rate();
     utterance.pitch = 1;
     const voice = selectedVoice();
     if (voice) utterance.voice = voice;
@@ -109,6 +127,9 @@
     controls.querySelector("[data-narration-current]")?.addEventListener("click", () => speakCurrent(false));
     controls.querySelector("[data-narration-auto]")?.addEventListener("click", () => speakCurrent(true));
     controls.querySelector("[data-narration-stop]")?.addEventListener("click", stopNarration);
+    controls.querySelector("[data-narration-slower]")?.addEventListener("click", () => adjustRate(-0.1));
+    controls.querySelector("[data-narration-faster]")?.addEventListener("click", () => adjustRate(0.1));
+    rateInput?.addEventListener("input", updateRateLabel);
   }
 
   function bindKeys() {
@@ -133,6 +154,7 @@
     bindControls();
     bindKeys();
     populateVoices();
+    updateRateLabel();
     if ("speechSynthesis" in window) {
       window.speechSynthesis.onvoiceschanged = populateVoices;
       setStatus("Ready");

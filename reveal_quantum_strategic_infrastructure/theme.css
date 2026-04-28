@@ -83,6 +83,12 @@ body {
   cursor: pointer;
 }
 
+.narration-controls [data-narration-slower],
+.narration-controls [data-narration-faster] {
+  min-width: 28px;
+  padding: 0;
+}
+
 .narration-controls select {
   max-width: 210px;
 }
@@ -95,7 +101,13 @@ body {
 }
 
 .narration-controls input[type="range"] {
-  width: 74px;
+  width: 96px;
+}
+
+.narration-controls output {
+  min-width: 34px;
+  color: rgba(7, 22, 45, 0.72);
+  text-align: right;
 }
 
 .narration-controls [data-narration-status] {

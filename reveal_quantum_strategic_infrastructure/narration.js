@@ -10,9 +10,28 @@
   const voiceSelect = controls ? controls.querySelector("[data-narration-voice]") : null;
   const rateInput = controls ? controls.querySelector("[data-narration-rate]") : null;
   const rateValue = controls ? controls.querySelector("[data-narration-rate-value]") : null;
+  const pauseButton = controls ? controls.querySelector("[data-narration-pause]") : null;
+  const captions = document.querySelector(".narration-captions");
+  const captionText = captions ? captions.querySelector("[data-narration-caption]") : null;
 
   function setStatus(text) {
     if (status) status.textContent = text;
+  }
+
+  function setPauseLabel(text) {
+    if (pauseButton) pauseButton.textContent = text;
+  }
+
+  function showCaptions(text) {
+    if (!captions || !captionText) return;
+    captionText.textContent = text;
+    captions.hidden = false;
+  }
+
+  function hideCaptions() {
+    if (!captions || !captionText) return;
+    captionText.textContent = "";
+    captions.hidden = true;
   }
 
   function normalizeNotes(text) {
@@ -68,8 +87,26 @@
   function stopNarration() {
     state.auto = false;
     state.speaking = false;
+    state.paused = false;
     if ("speechSynthesis" in window) window.speechSynthesis.cancel();
+    setPauseLabel("Pause");
+    hideCaptions();
     setStatus("Stopped");
+  }
+
+  function togglePause() {
+    if (!("speechSynthesis" in window) || !state.speaking) return;
+    if (state.paused) {
+      window.speechSynthesis.resume();
+      state.paused = false;
+      setPauseLabel("Pause");
+      setStatus(state.auto ? "Auto narrating" : "Narrating slide");
+    } else {
+      window.speechSynthesis.pause();
+      state.paused = true;
+      setPauseLabel("Resume");
+      setStatus("Paused");
+    }
   }
 
   function speakCurrent(autoAdvance) {
@@ -85,6 +122,7 @@
     }
 
     window.speechSynthesis.cancel();
+    state.paused = false;
     const utterance = new SpeechSynthesisUtterance(text);
     utterance.lang = "en-US";
     utterance.rate = rate();
@@ -94,10 +132,14 @@
 
     state.speaking = true;
     state.auto = Boolean(autoAdvance);
+    setPauseLabel("Pause");
+    showCaptions(text);
     setStatus(state.auto ? "Auto narrating" : "Narrating slide");
 
     utterance.onend = function () {
       state.speaking = false;
+      state.paused = false;
+      setPauseLabel("Pause");
       if (state.auto) {
         const index = Reveal.getIndices();
         const total = Reveal.getTotalSlides();
@@ -109,6 +151,7 @@
           setStatus("Finished");
         }
       } else {
+        hideCaptions();
         setStatus("Ready");
       }
     };
@@ -116,6 +159,9 @@
     utterance.onerror = function () {
       state.speaking = false;
       state.auto = false;
+      state.paused = false;
+      setPauseLabel("Pause");
+      hideCaptions();
       setStatus("Narration error");
     };
 
@@ -126,6 +172,7 @@
     if (!controls) return;
     controls.querySelector("[data-narration-current]")?.addEventListener("click", () => speakCurrent(false));
     controls.querySelector("[data-narration-auto]")?.addEventListener("click", () => speakCurrent(true));
+    controls.querySelector("[data-narration-pause]")?.addEventListener("click", togglePause);
     controls.querySelector("[data-narration-stop]")?.addEventListener("click", stopNarration);
     controls.querySelector("[data-narration-slower]")?.addEventListener("click", () => adjustRate(-0.1));
     controls.querySelector("[data-narration-faster]")?.addEventListener("click", () => adjustRate(0.1));
@@ -146,6 +193,10 @@
       if (event.key === "x" || event.key === "X") {
         event.preventDefault();
         stopNarration();
+      }
+      if (event.key === "p" || event.key === "P") {
+        event.preventDefault();
+        togglePause();
       }
     });
   }

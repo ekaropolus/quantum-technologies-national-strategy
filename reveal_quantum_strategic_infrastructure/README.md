@@ -24,9 +24,11 @@ Narration controls are available in the top-left corner:
 
 - `Narrate` reads the current slide notes aloud.
 - `Auto` reads from the current slide and advances automatically.
+- `Pause` pauses narration and changes to `Resume`.
 - `Stop` cancels narration.
+- Captions appear at the bottom while narration is active.
 - Use the `+` and `-` buttons or the rate slider to adjust narration speed from `0.75x` to `2.0x`.
-- Keyboard shortcuts: `N` narrates the current slide, `A` starts auto narration, and `X` stops.
+- Keyboard shortcuts: `N` narrates the current slide, `A` starts auto narration, `P` pauses/resumes, and `X` stops.
 
 The current version loads Reveal.js from a CDN. If an offline version is needed, vendor the Reveal.js assets locally and update the paths in `index.html`.
 

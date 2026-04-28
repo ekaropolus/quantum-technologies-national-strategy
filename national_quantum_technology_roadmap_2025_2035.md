@@ -115,7 +115,7 @@ The quantitative evidence underlying this roadmap is drawn from OECD public repo
 
 ## 11. Code Availability
 
-The companion research repository contains the source manuscript, processed data, BibTeX bibliography, figure-generation code, and reproducible build script used to generate the manuscript outputs. The repository is intended to support inspection of the OpenAlex extracts, regeneration of figures, and reconstruction of the PDF, TeX, and DOCX versions from the manuscript sources.
+The companion research repository is available at https://github.com/ekaropolus/quantum-technologies-national-strategy. It contains the source manuscript, processed data, BibTeX bibliography, figure-generation code, and reproducible build script used to generate the manuscript outputs. The repository is intended to support inspection of the OpenAlex extracts, regeneration of figures, and reconstruction of the PDF, TeX, and DOCX versions from the manuscript sources.
 
 ## 12. Limitations
 

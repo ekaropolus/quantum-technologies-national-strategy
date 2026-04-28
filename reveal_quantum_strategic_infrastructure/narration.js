@@ -2,7 +2,12 @@
   const state = {
     auto: false,
     speaking: false,
-    voices: []
+    paused: false,
+    voices: [],
+    chunks: [],
+    chunkIndex: 0,
+    runId: 0,
+    voiceFallback: false
   };
 
   const controls = document.querySelector(".narration-controls");
@@ -48,8 +53,28 @@
     return normalizeNotes(notes.textContent || "");
   }
 
+  function splitIntoChunks(text) {
+    const sentences = text.match(/[^.!?]+[.!?]+|[^.!?]+$/g) || [text];
+    const chunks = [];
+    let current = "";
+
+    sentences.forEach((sentence) => {
+      const clean = sentence.trim();
+      if (!clean) return;
+      if ((current + " " + clean).trim().length <= 240) {
+        current = (current + " " + clean).trim();
+      } else {
+        if (current) chunks.push(current);
+        current = clean;
+      }
+    });
+
+    if (current) chunks.push(current);
+    return chunks;
+  }
+
   function selectedVoice() {
-    if (!voiceSelect || !voiceSelect.value) return null;
+    if (state.voiceFallback || !voiceSelect || !voiceSelect.value) return null;
     return state.voices.find((voice) => voice.name === voiceSelect.value) || null;
   }
 
@@ -75,6 +100,7 @@
     state.voices = window.speechSynthesis.getVoices();
     const englishVoices = state.voices.filter((voice) => /^en(-|_)?/i.test(voice.lang));
     const voices = englishVoices.length ? englishVoices : state.voices;
+    const previous = voiceSelect.value;
     voiceSelect.innerHTML = "";
     voices.forEach((voice) => {
       const option = document.createElement("option");
@@ -82,12 +108,86 @@
       option.textContent = `${voice.name} (${voice.lang})`;
       voiceSelect.appendChild(option);
     });
+    if (previous) voiceSelect.value = previous;
+  }
+
+  function finishSlide(runId) {
+    if (runId !== state.runId) return;
+    state.speaking = false;
+    state.paused = false;
+    setPauseLabel("Pause");
+
+    if (state.auto) {
+      const index = Reveal.getIndices();
+      const total = Reveal.getTotalSlides();
+      if (index.h + 1 < total) {
+        Reveal.next();
+        window.setTimeout(() => speakCurrent(true), 450);
+      } else {
+        state.auto = false;
+        hideCaptions();
+        setStatus("Finished");
+      }
+    } else {
+      hideCaptions();
+      setStatus("Ready");
+    }
+  }
+
+  function speakNextChunk(runId) {
+    if (runId !== state.runId || state.paused) return;
+    const text = state.chunks[state.chunkIndex];
+
+    if (!text) {
+      finishSlide(runId);
+      return;
+    }
+
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = "en-US";
+    utterance.rate = rate();
+    utterance.pitch = 1;
+    const voice = selectedVoice();
+    if (voice) utterance.voice = voice;
+
+    showCaptions(text);
+    setStatus(state.auto ? "Auto narrating" : "Narrating slide");
+
+    utterance.onend = function () {
+      if (runId !== state.runId) return;
+      state.chunkIndex += 1;
+      window.setTimeout(() => speakNextChunk(runId), 90);
+    };
+
+    utterance.onerror = function (event) {
+      if (runId !== state.runId) return;
+      if (event && (event.error === "interrupted" || event.error === "canceled")) return;
+
+      if (selectedVoice() && !state.voiceFallback) {
+        state.voiceFallback = true;
+        setStatus("Retrying default voice");
+        window.setTimeout(() => speakNextChunk(runId), 120);
+        return;
+      }
+
+      state.speaking = false;
+      state.auto = false;
+      state.paused = false;
+      setPauseLabel("Pause");
+      hideCaptions();
+      setStatus(event && event.error ? `Narration error: ${event.error}` : "Narration error");
+    };
+
+    window.speechSynthesis.speak(utterance);
   }
 
   function stopNarration() {
+    state.runId += 1;
     state.auto = false;
     state.speaking = false;
     state.paused = false;
+    state.chunks = [];
+    state.chunkIndex = 0;
     if ("speechSynthesis" in window) window.speechSynthesis.cancel();
     setPauseLabel("Pause");
     hideCaptions();
@@ -121,51 +221,16 @@
       return;
     }
 
+    state.runId += 1;
     window.speechSynthesis.cancel();
-    state.paused = false;
-    const utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = "en-US";
-    utterance.rate = rate();
-    utterance.pitch = 1;
-    const voice = selectedVoice();
-    if (voice) utterance.voice = voice;
-
-    state.speaking = true;
     state.auto = Boolean(autoAdvance);
+    state.speaking = true;
+    state.paused = false;
+    state.voiceFallback = false;
+    state.chunks = splitIntoChunks(text);
+    state.chunkIndex = 0;
     setPauseLabel("Pause");
-    showCaptions(text);
-    setStatus(state.auto ? "Auto narrating" : "Narrating slide");
-
-    utterance.onend = function () {
-      state.speaking = false;
-      state.paused = false;
-      setPauseLabel("Pause");
-      if (state.auto) {
-        const index = Reveal.getIndices();
-        const total = Reveal.getTotalSlides();
-        if (index.h + 1 < total) {
-          Reveal.next();
-          window.setTimeout(() => speakCurrent(true), 500);
-        } else {
-          state.auto = false;
-          setStatus("Finished");
-        }
-      } else {
-        hideCaptions();
-        setStatus("Ready");
-      }
-    };
-
-    utterance.onerror = function () {
-      state.speaking = false;
-      state.auto = false;
-      state.paused = false;
-      setPauseLabel("Pause");
-      hideCaptions();
-      setStatus("Narration error");
-    };
-
-    window.speechSynthesis.speak(utterance);
+    speakNextChunk(state.runId);
   }
 
   function bindControls() {

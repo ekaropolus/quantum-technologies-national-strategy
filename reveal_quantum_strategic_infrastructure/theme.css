@@ -169,10 +169,10 @@ body {
 }
 
 .reveal .slides section .paper-section-badge {
-  position: absolute;
+  position: fixed;
   z-index: 18;
   left: 18px;
-  bottom: 18px;
+  bottom: 46px;
   max-width: 320px;
   box-sizing: border-box;
   padding: 6px 10px;

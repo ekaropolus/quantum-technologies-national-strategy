@@ -1,0 +1,111 @@
+country_code,country,count
+"US","United States of America",2584
+"CN","China",1641
+"DE","Germany",1225
+"GB","United Kingdom of Great Britain and Northern Ireland",1102
+"FR","France",607
+"IT","Italy",552
+"IN","India",551
+"JP","Japan",519
+"CA","Canada",463
+"AU","Australia",438
+"ES","Spain",410
+"AT","Austria",348
+"CH","Switzerland",334
+"NL","Netherlands",262
+"RU","Russian Federation",244
+"KR","Korea, Republic of",225
+"SG","Singapore",210
+"DK","Denmark",191
+"SE","Sweden",171
+"PL","Poland",164
+"IL","Israel",160
+"BR","Brazil",154
+"CZ","Czechia",130
+"FI","Finland",111
+"HK","Hong Kong",103
+"IR","Iran, Islamic Republic of",90
+"TW","Taiwan, Province of China",85
+"SA","Saudi Arabia",69
+"MX","Mexico",56
+"PK","Pakistan",55
+"BE","Belgium",52
+"HU","Hungary",52
+"TR","Turkey",50
+"IE","Ireland",45
+"GR","Greece",44
+"ZA","South Africa",42
+"CL","Chile",38
+"MA","Morocco",35
+"PT","Portugal",34
+"EG","Egypt",30
+"ID","Indonesia",27
+"BD","Bangladesh",26
+"SK","Slovakia",25
+"AE","United Arab Emirates",24
+"AR","Argentina",24
+"NO","Norway",22
+"IQ","Iraq",20
+"CO","Colombia",18
+"RO","Romania",16
+"SI","Slovenia",16
+"BG","Bulgaria",15
+"MY","Malaysia",15
+"UA","Ukraine",15
+"MK","North Macedonia",14
+"NZ","New Zealand",13
+"RS","Serbia",13
+"QA","Qatar",12
+"UZ","Uzbekistan",12
+"BY","Belarus",11
+"JO","Jordan",11
+"LU","Luxembourg",11
+"TH","Thailand",11
+"VN","Viet Nam",11
+"DZ","Algeria",10
+"LT","Lithuania",10
+"NG","Nigeria",10
+"NP","Nepal",9
+"TJ","Tajikistan",9
+"BI","Burundi",8
+"PH","Philippines",8
+"ET","Ethiopia",7
+"HR","Croatia",7
+"MT","Malta",7
+"OM","Oman",7
+"TN","Tunisia",7
+"MO","Macao",5
+"PE","Peru",5
+"AM","Armenia",4
+"CM","Cameroon",4
+"GH","Ghana",4
+"KZ","Kazakhstan",4
+"PA","Panama",4
+"UY","Uruguay",4
+"VE","Venezuela, Bolivarian Republic of",4
+"AZ","Azerbaijan",3
+"CY","Cyprus",3
+"LV","Latvia",3
+"AL","Albania",2
+"CU","Cuba",2
+"EC","Ecuador",2
+"EE","Estonia",2
+"GE","Georgia",2
+"IS","Iceland",2
+"KP","Korea, Democratic People's Republic of",2
+"LB","Lebanon",2
+"MD","Moldova, Republic of",2
+"MN","Mongolia",2
+"PS","Palestine, State of",2
+"YE","Yemen",2
+"AF","Afghanistan",1
+"BA","Bosnia and Herzegovina",1
+"BF","Burkina Faso",1
+"CR","Costa Rica",1
+"FJ","Fiji",1
+"LK","Sri Lanka",1
+"MM","Myanmar",1
+"SS","South Sudan",1
+"TC","Turks and Caicos Islands",1
+"UG","Uganda",1
+"ZW","Zimbabwe",1

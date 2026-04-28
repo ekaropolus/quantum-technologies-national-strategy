@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620">
+  <rect width="100%" height="100%" fill="white"/>
+  <style>
+    text { font-family: Arial, Helvetica, sans-serif; fill: #1f2933; }
+    .title { font-size: 24px; font-weight: 700; }
+    .subtitle { font-size: 14px; fill: #64748b; }
+    .axis { font-size: 12px; fill: #64748b; }
+    .label { font-size: 13px; }
+    .small { font-size: 11px; fill: #64748b; }
+    .caption { font-size: 12px; fill: #64748b; }
+  </style>
+<text x="52.0" y="48.0" class="title" text-anchor="start">National quantum roadmap, 2025-2035</text>
+<text x="52.0" y="74.0" class="subtitle" text-anchor="start">Capability accumulation proceeds through preparation, operational learning, and selective scaling.</text>
+<rect x="120.0" y="190.0" width="250.0" height="90.0" fill="#2f6f9f" stroke="none" rx="8"/>
+<text x="138.0" y="220.0" class="label" text-anchor="start" font-weight="700">2025-2027</text>
+<text x="138.0" y="248.0" class="label" text-anchor="start" font-weight="700">Preparation and security</text>
+<polygon points="370,205 415,235 370,265" fill="#2f6f9f"/>
+<rect x="124.0" y="308.0" width="10.0" height="10.0" fill="#2f6f9f" stroke="none" rx="5"/>
+<text x="144.0" y="317.0" class="label" text-anchor="start">PQC inventories</text>
+<rect x="124.0" y="342.0" width="10.0" height="10.0" fill="#2f6f9f" stroke="none" rx="5"/>
+<text x="144.0" y="351.0" class="label" text-anchor="start">QCaaS access</text>
+<rect x="124.0" y="376.0" width="10.0" height="10.0" fill="#2f6f9f" stroke="none" rx="5"/>
+<text x="144.0" y="385.0" class="label" text-anchor="start">Workforce curricula</text>
+<rect x="124.0" y="410.0" width="10.0" height="10.0" fill="#2f6f9f" stroke="none" rx="5"/>
+<text x="144.0" y="419.0" class="label" text-anchor="start">Sensing feasibility</text>
+<rect x="425.0" y="190.0" width="310.0" height="90.0" fill="#2a9d8f" stroke="none" rx="8"/>
+<text x="443.0" y="220.0" class="label" text-anchor="start" font-weight="700">2027-2030</text>
+<text x="443.0" y="248.0" class="label" text-anchor="start" font-weight="700">Testbeds and pilots</text>
+<polygon points="735,205 780,235 735,265" fill="#2a9d8f"/>
+<rect x="429.0" y="308.0" width="10.0" height="10.0" fill="#2a9d8f" stroke="none" rx="5"/>
+<text x="449.0" y="317.0" class="label" text-anchor="start">Sensing pilots</text>
+<rect x="429.0" y="342.0" width="10.0" height="10.0" fill="#2a9d8f" stroke="none" rx="5"/>
+<text x="449.0" y="351.0" class="label" text-anchor="start">PQC staged migration</text>
+<rect x="429.0" y="376.0" width="10.0" height="10.0" fill="#2a9d8f" stroke="none" rx="5"/>
+<text x="449.0" y="385.0" class="label" text-anchor="start">Benchmark lab</text>
+<rect x="429.0" y="410.0" width="10.0" height="10.0" fill="#2a9d8f" stroke="none" rx="5"/>
+<text x="449.0" y="419.0" class="label" text-anchor="start">QKD where justified</text>
+<rect x="790.0" y="190.0" width="400.0" height="90.0" fill="#6d5bd0" stroke="none" rx="8"/>
+<text x="808.0" y="220.0" class="label" text-anchor="start" font-weight="700">2030-2035</text>
+<text x="808.0" y="248.0" class="label" text-anchor="start" font-weight="700">Selective scaling</text>
+<rect x="794.0" y="308.0" width="10.0" height="10.0" fill="#6d5bd0" stroke="none" rx="5"/>
+<text x="814.0" y="317.0" class="label" text-anchor="start">Operational sensing</text>
+<rect x="794.0" y="342.0" width="10.0" height="10.0" fill="#6d5bd0" stroke="none" rx="5"/>
+<text x="814.0" y="351.0" class="label" text-anchor="start">Quantum networks</text>
+<rect x="794.0" y="376.0" width="10.0" height="10.0" fill="#6d5bd0" stroke="none" rx="5"/>
+<text x="814.0" y="385.0" class="label" text-anchor="start">Logical-qubit readiness</text>
+<rect x="794.0" y="410.0" width="10.0" height="10.0" fill="#6d5bd0" stroke="none" rx="5"/>
+<text x="814.0" y="419.0" class="label" text-anchor="start">Frontier research</text>
+<line x1="120.0" y1="302.0" x2="1080.0" y2="302.0" stroke="#9aa6b2" stroke-width="1.3"/>
+<line x1="120.0" y1="294.0" x2="120.0" y2="312.0" stroke="#64748b" stroke-width="1.2"/>
+<text x="120.0" y="336.0" class="axis" text-anchor="middle">2025</text>
+<line x1="370.0" y1="294.0" x2="370.0" y2="312.0" stroke="#64748b" stroke-width="1.2"/>
+<text x="370.0" y="336.0" class="axis" text-anchor="middle">2027</text>
+<line x1="735.0" y1="294.0" x2="735.0" y2="312.0" stroke="#64748b" stroke-width="1.2"/>
+<text x="735.0" y="336.0" class="axis" text-anchor="middle">2030</text>
+<line x1="1080.0" y1="294.0" x2="1080.0" y2="312.0" stroke="#64748b" stroke-width="1.2"/>
+<text x="1080.0" y="336.0" class="axis" text-anchor="middle">2035</text>
+<text x="52.0" y="584.0" class="caption" text-anchor="start">Source: Author synthesis. Roadmap phases are capability milestones rather than hardware-breakthrough predictions.</text>
+</svg>

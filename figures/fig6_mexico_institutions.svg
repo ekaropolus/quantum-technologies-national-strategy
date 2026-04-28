@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="610" viewBox="0 0 1100 610">
+  <rect width="100%" height="100%" fill="white"/>
+  <style>
+    text { font-family: Arial, Helvetica, sans-serif; fill: #1f2933; }
+    .title { font-size: 24px; font-weight: 700; }
+    .subtitle { font-size: 14px; fill: #64748b; }
+    .axis { font-size: 12px; fill: #64748b; }
+    .label { font-size: 13px; }
+    .small { font-size: 11px; fill: #64748b; }
+    .caption { font-size: 12px; fill: #64748b; }
+  </style>
+<text x="52.0" y="48.0" class="title" text-anchor="start">Mexico-affiliated quantum-technology research base</text>
+<text x="52.0" y="74.0" class="subtitle" text-anchor="start">OpenAlex concept C190463098, institution counts in the 2015-2025 Mexico-affiliated subset.</text>
+<line x1="290.0" y1="100.0" x2="290.0" y2="395.0" stroke="#d8dee9" stroke-width="0.8"/>
+<text x="290.0" y="90.0" class="axis" text-anchor="middle">0</text>
+<line x1="462.5" y1="100.0" x2="462.5" y2="395.0" stroke="#d8dee9" stroke-width="0.8"/>
+<text x="462.5" y="90.0" class="axis" text-anchor="middle">5</text>
+<line x1="635.0" y1="100.0" x2="635.0" y2="395.0" stroke="#d8dee9" stroke-width="0.8"/>
+<text x="635.0" y="90.0" class="axis" text-anchor="middle">10</text>
+<line x1="807.5" y1="100.0" x2="807.5" y2="395.0" stroke="#d8dee9" stroke-width="0.8"/>
+<text x="807.5" y="90.0" class="axis" text-anchor="middle">15</text>
+<line x1="980.0" y1="100.0" x2="980.0" y2="395.0" stroke="#d8dee9" stroke-width="0.8"/>
+<text x="980.0" y="90.0" class="axis" text-anchor="middle">20</text>
+<text x="272.0" y="148.0" class="label" text-anchor="end" font-weight="700">UNAM</text>
+<rect x="290.0" y="120.0" width="690.0" height="34.0" fill="#2f6f9f" stroke="none" rx="3"/>
+<text x="990.0" y="144.0" class="label" text-anchor="start">20</text>
+<text x="272.0" y="220.0" class="label" text-anchor="end" font-weight="700">IPN</text>
+<rect x="290.0" y="192.0" width="448.5" height="34.0" fill="#2f6f9f" stroke="none" rx="3"/>
+<text x="748.5" y="216.0" class="label" text-anchor="start">13</text>
+<text x="272.0" y="292.0" class="label" text-anchor="end" font-weight="700">Tecnologico de Monterrey</text>
+<rect x="290.0" y="264.0" width="345.0" height="34.0" fill="#2f6f9f" stroke="none" rx="3"/>
+<text x="645.0" y="288.0" class="label" text-anchor="start">10</text>
+<text x="272.0" y="364.0" class="label" text-anchor="end">Other Mexico-affiliated works</text>
+<rect x="290.0" y="336.0" width="448.5" height="34.0" fill="#b4534a" stroke="none" rx="3"/>
+<text x="748.5" y="360.0" class="label" text-anchor="start">13</text>
+<text x="52.0" y="560.0" class="caption" text-anchor="start">Source: OpenAlex Works API extraction. Institution counts are bibliometric proxies and do not measure deployment or industrial readiness.</text>
+</svg>

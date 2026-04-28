@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720">
+  <rect width="100%" height="100%" fill="white"/>
+  <style>
+    text { font-family: Arial, Helvetica, sans-serif; fill: #1f2933; }
+    .title { font-size: 24px; font-weight: 700; }
+    .subtitle { font-size: 14px; fill: #64748b; }
+    .axis { font-size: 12px; fill: #64748b; }
+    .label { font-size: 13px; }
+    .small { font-size: 11px; fill: #64748b; }
+    .caption { font-size: 12px; fill: #64748b; }
+  </style>
+<text x="52.0" y="48.0" class="title" text-anchor="start">Awareness-readiness gap in quantum computing adoption</text>
+<text x="52.0" y="74.0" class="subtitle" text-anchor="start">Survey evidence summarized by OECD shows high expected impact but substantially lower planning and budget readiness.</text>
+<line x1="250.0" y1="115.0" x2="250.0" y2="553.0" stroke="#d8dee9" stroke-width="0.8"/>
+<text x="250.0" y="105.0" class="axis" text-anchor="middle">0%</text>
+<line x1="414.0" y1="115.0" x2="414.0" y2="553.0" stroke="#d8dee9" stroke-width="0.8"/>
+<text x="414.0" y="105.0" class="axis" text-anchor="middle">20%</text>
+<line x1="578.0" y1="115.0" x2="578.0" y2="553.0" stroke="#d8dee9" stroke-width="0.8"/>
+<text x="578.0" y="105.0" class="axis" text-anchor="middle">40%</text>
+<line x1="742.0" y1="115.0" x2="742.0" y2="553.0" stroke="#d8dee9" stroke-width="0.8"/>
+<text x="742.0" y="105.0" class="axis" text-anchor="middle">60%</text>
+<line x1="906.0" y1="115.0" x2="906.0" y2="553.0" stroke="#d8dee9" stroke-width="0.8"/>
+<text x="906.0" y="105.0" class="axis" text-anchor="middle">80%</text>
+<line x1="1070.0" y1="115.0" x2="1070.0" y2="553.0" stroke="#d8dee9" stroke-width="0.8"/>
+<text x="1070.0" y="105.0" class="axis" text-anchor="middle">100%</text>
+<text x="230.0" y="163.0" class="label" text-anchor="end" font-weight="700">UK executives</text>
+<rect x="250.0" y="135.0" width="795.4" height="26.0" fill="#2f6f9f" stroke="none" rx="3"/>
+<text x="1054.4" y="154.0" class="label" text-anchor="start">97% expect disruption</text>
+<rect x="250.0" y="177.0" width="270.6" height="26.0" fill="#b8871b" stroke="none" rx="3"/>
+<text x="529.6" y="196.0" class="label" text-anchor="start">33% readiness planning</text>
+<text x="230.0" y="273.0" class="label" text-anchor="end" font-weight="700">Financial services</text>
+<rect x="250.0" y="245.0" width="713.4" height="26.0" fill="#2f6f9f" stroke="none" rx="3"/>
+<text x="972.4" y="264.0" class="label" text-anchor="start">87% see opportunity</text>
+<rect x="250.0" y="287.0" width="221.4" height="26.0" fill="#b8871b" stroke="none" rx="3"/>
+<text x="480.4" y="306.0" class="label" text-anchor="start">27% identified use case</text>
+<text x="230.0" y="383.0" class="label" text-anchor="end" font-weight="700">Financial services</text>
+<rect x="250.0" y="355.0" width="713.4" height="26.0" fill="#2f6f9f" stroke="none" rx="3"/>
+<text x="972.4" y="374.0" class="label" text-anchor="start">87% see opportunity</text>
+<rect x="250.0" y="397.0" width="106.6" height="26.0" fill="#b8871b" stroke="none" rx="3"/>
+<text x="365.6" y="416.0" class="label" text-anchor="start">13% dedicated budget</text>
+<text x="230.0" y="493.0" class="label" text-anchor="end" font-weight="700">Digital trust/risk</text>
+<rect x="250.0" y="465.0" width="524.8" height="26.0" fill="#2f6f9f" stroke="none" rx="3"/>
+<text x="783.8" y="484.0" class="label" text-anchor="start">64% expect impact</text>
+<rect x="250.0" y="507.0" width="164.0" height="26.0" fill="#b8871b" stroke="none" rx="3"/>
+<text x="423.0" y="526.0" class="label" text-anchor="start">20% formal readiness plan</text>
+<rect x="780.0" y="618.0" width="18.0" height="18.0" fill="#2f6f9f" stroke="none" rx="2"/>
+<text x="808.0" y="633.0" class="label" text-anchor="start">Expectation or perceived opportunity</text>
+<rect x="780.0" y="648.0" width="18.0" height="18.0" fill="#b8871b" stroke="none" rx="2"/>
+<text x="808.0" y="663.0" class="label" text-anchor="start">Planning, use-case, or budget readiness</text>
+<text x="52.0" y="682.0" class="caption" text-anchor="start">Source: OECD business-readiness synthesis of EY/NQCC, Moody&#x27;s, and ISACA survey evidence.</text>
+</svg>

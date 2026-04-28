@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the relevant manuscript and this companion repository."
+title: "Quantum Technologies National Strategy Research Compendium"
+authors:
+  - family-names: "Valdés Porras"
+    given-names: "Edgar Antonio"
+    affiliation: "Hadox Research Labs"
+date-released: "2026-04-28"
+version: "0.1.0"
+keywords:
+  - quantum technologies
+  - quantum computing
+  - high-performance computing
+  - post-quantum cryptography
+  - quantum sensing
+  - national innovation systems
+  - Mexico
+license: "CC-BY-4.0"
+preferred-citation:
+  type: generic
+  title: "Quantum Technologies as Strategic Infrastructure: Evidence, Adoption Pathways, and a National Research Agenda for 2025-2035"
+  authors:
+    - family-names: "Valdés Porras"
+      given-names: "Edgar Antonio"
+      affiliation: "Hadox Research Labs"
+  year: 2026
+  notes: "Prepared for the Quantum Technologies track of the twenty-third edition of the Global Information Technology Management Association Annual Conference, Monterrey, Mexico, May 6-8, 2026."

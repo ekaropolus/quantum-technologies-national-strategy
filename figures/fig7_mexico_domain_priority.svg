@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1150" height="650" viewBox="0 0 1150 650">
+  <rect width="100%" height="100%" fill="white"/>
+  <style>
+    text { font-family: Arial, Helvetica, sans-serif; fill: #1f2933; }
+    .title { font-size: 24px; font-weight: 700; }
+    .subtitle { font-size: 14px; fill: #64748b; }
+    .axis { font-size: 12px; fill: #64748b; }
+    .label { font-size: 13px; }
+    .small { font-size: 11px; fill: #64748b; }
+    .caption { font-size: 12px; fill: #64748b; }
+  </style>
+<text x="52.0" y="48.0" class="title" text-anchor="start">Domain priorities for Mexican quantum readiness</text>
+<text x="52.0" y="74.0" class="subtitle" text-anchor="start">Scored synthesis: 0=not central, 1=monitor, 2=build, 3=priority for 2025-2035 capability formation.</text>
+<text x="375.0" y="109.0" class="label" text-anchor="middle" font-weight="700">Urgency</text>
+<text x="565.0" y="109.0" class="label" text-anchor="middle" font-weight="700">Feasibility</text>
+<text x="755.0" y="109.0" class="label" text-anchor="middle" font-weight="700">Public value</text>
+<text x="945.0" y="109.0" class="label" text-anchor="middle" font-weight="700">Sovereignty</text>
+<text x="256.0" y="177.0" class="label" text-anchor="end" font-weight="700">PQC</text>
+<rect x="280.0" y="135.0" width="182.0" height="62.0" fill="#2f6f9f" stroke="#ffffff" rx="4"/>
+<text x="371.0" y="175.0" class="label" text-anchor="middle" font-weight="700">3</text>
+<rect x="470.0" y="135.0" width="182.0" height="62.0" fill="#2f6f9f" stroke="#ffffff" rx="4"/>
+<text x="561.0" y="175.0" class="label" text-anchor="middle" font-weight="700">3</text>
+<rect x="660.0" y="135.0" width="182.0" height="62.0" fill="#2f6f9f" stroke="#ffffff" rx="4"/>
+<text x="751.0" y="175.0" class="label" text-anchor="middle" font-weight="700">3</text>
+<rect x="850.0" y="135.0" width="182.0" height="62.0" fill="#2f6f9f" stroke="#ffffff" rx="4"/>
+<text x="941.0" y="175.0" class="label" text-anchor="middle" font-weight="700">3</text>
+<text x="256.0" y="247.0" class="label" text-anchor="end" font-weight="700">Sensing</text>
+<rect x="280.0" y="205.0" width="182.0" height="62.0" fill="#73b6c8" stroke="#ffffff" rx="4"/>
+<text x="371.0" y="245.0" class="label" text-anchor="middle" font-weight="700">2</text>
+<rect x="470.0" y="205.0" width="182.0" height="62.0" fill="#73b6c8" stroke="#ffffff" rx="4"/>
+<text x="561.0" y="245.0" class="label" text-anchor="middle" font-weight="700">2</text>
+<rect x="660.0" y="205.0" width="182.0" height="62.0" fill="#2f6f9f" stroke="#ffffff" rx="4"/>
+<text x="751.0" y="245.0" class="label" text-anchor="middle" font-weight="700">3</text>
+<rect x="850.0" y="205.0" width="182.0" height="62.0" fill="#73b6c8" stroke="#ffffff" rx="4"/>
+<text x="941.0" y="245.0" class="label" text-anchor="middle" font-weight="700">2</text>
+<text x="256.0" y="317.0" class="label" text-anchor="end" font-weight="700">QCaaS</text>
+<rect x="280.0" y="275.0" width="182.0" height="62.0" fill="#73b6c8" stroke="#ffffff" rx="4"/>
+<text x="371.0" y="315.0" class="label" text-anchor="middle" font-weight="700">2</text>
+<rect x="470.0" y="275.0" width="182.0" height="62.0" fill="#2f6f9f" stroke="#ffffff" rx="4"/>
+<text x="561.0" y="315.0" class="label" text-anchor="middle" font-weight="700">3</text>
+<rect x="660.0" y="275.0" width="182.0" height="62.0" fill="#73b6c8" stroke="#ffffff" rx="4"/>
+<text x="751.0" y="315.0" class="label" text-anchor="middle" font-weight="700">2</text>
+<rect x="850.0" y="275.0" width="182.0" height="62.0" fill="#73b6c8" stroke="#ffffff" rx="4"/>
+<text x="941.0" y="315.0" class="label" text-anchor="middle" font-weight="700">2</text>
+<text x="256.0" y="387.0" class="label" text-anchor="end" font-weight="700">Communication</text>
+<rect x="280.0" y="345.0" width="182.0" height="62.0" fill="#cfe7ef" stroke="#ffffff" rx="4"/>
+<text x="371.0" y="385.0" class="label" text-anchor="middle" font-weight="700">1</text>
+<rect x="470.0" y="345.0" width="182.0" height="62.0" fill="#cfe7ef" stroke="#ffffff" rx="4"/>
+<text x="561.0" y="385.0" class="label" text-anchor="middle" font-weight="700">1</text>
+<rect x="660.0" y="345.0" width="182.0" height="62.0" fill="#73b6c8" stroke="#ffffff" rx="4"/>
+<text x="751.0" y="385.0" class="label" text-anchor="middle" font-weight="700">2</text>
+<rect x="850.0" y="345.0" width="182.0" height="62.0" fill="#73b6c8" stroke="#ffffff" rx="4"/>
+<text x="941.0" y="385.0" class="label" text-anchor="middle" font-weight="700">2</text>
+<text x="256.0" y="457.0" class="label" text-anchor="end" font-weight="700">Frontier R&amp;D</text>
+<rect x="280.0" y="415.0" width="182.0" height="62.0" fill="#73b6c8" stroke="#ffffff" rx="4"/>
+<text x="371.0" y="455.0" class="label" text-anchor="middle" font-weight="700">2</text>
+<rect x="470.0" y="415.0" width="182.0" height="62.0" fill="#cfe7ef" stroke="#ffffff" rx="4"/>
+<text x="561.0" y="455.0" class="label" text-anchor="middle" font-weight="700">1</text>
+<rect x="660.0" y="415.0" width="182.0" height="62.0" fill="#73b6c8" stroke="#ffffff" rx="4"/>
+<text x="751.0" y="455.0" class="label" text-anchor="middle" font-weight="700">2</text>
+<rect x="850.0" y="415.0" width="182.0" height="62.0" fill="#2f6f9f" stroke="#ffffff" rx="4"/>
+<text x="941.0" y="455.0" class="label" text-anchor="middle" font-weight="700">3</text>
+<text x="52.0" y="600.0" class="caption" text-anchor="start">Source: Author synthesis from OECD readiness data, NIST PQC standards, OpenAlex Mexico counts, and domain-readiness literature.</text>
+</svg>

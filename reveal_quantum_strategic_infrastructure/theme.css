@@ -39,8 +39,20 @@ body {
   pointer-events: none;
 }
 
+.hadox-mark {
+  position: fixed;
+  z-index: 24;
+  right: 20px;
+  bottom: 28px;
+  width: 128px;
+  height: auto;
+  opacity: 0.78;
+  pointer-events: none;
+}
+
 .reveal .controls {
   color: var(--accent);
+  right: 154px;
 }
 
 .reveal .progress {
@@ -49,7 +61,7 @@ body {
 }
 
 .reveal .slide-number {
-  right: 18px;
+  right: 154px;
   bottom: 28px;
   color: rgba(7, 22, 45, 0.6);
   background: rgba(255, 255, 255, 0.68);
@@ -60,7 +72,8 @@ body {
 }
 
 @media print {
-  .deck-meta {
+  .deck-meta,
+  .hadox-mark {
     display: none;
   }
 }

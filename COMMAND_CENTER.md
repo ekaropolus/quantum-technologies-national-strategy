@@ -8,15 +8,15 @@ This repository is the canonical Command Center root for the quantum technologie
 /home/hadox/cmd-center/platforms/research/quantum-technologies-national-strategy
 ```
 
-## Compatibility Path
+## Local Artifacts
 
-The previous loose root remains available as a symlink:
+Non-repository source material, review packages, and the former loose `/home/hadox/papers` workspace are preserved under:
 
 ```text
-/home/hadox/quantum-technologies-national-strategy
+/home/hadox/cmd-center/artifacts/outbound/quantum-technologies-national-strategy-20260428
 ```
 
-Do not treat the symlink as the canonical location for future documentation or automation.
+No project symlink is maintained in `/home/hadox`; this directory is the only local working root.
 
 ## Public Links
 
@@ -30,4 +30,3 @@ The reusable paper-to-GitHub-to-Reveal workflow is documented in:
 ```text
 /home/hadox/cmd-center/docs/26-research-paper-github-reveal-runbook-2026-04-28.md
 ```
-

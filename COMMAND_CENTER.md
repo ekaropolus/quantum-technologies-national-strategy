@@ -13,7 +13,7 @@ This repository is the canonical Command Center root for the quantum technologie
 Non-repository source material, review packages, and the former loose `/home/hadox/papers` workspace are preserved under:
 
 ```text
-/home/hadox/outputs/outbound/quantum-technologies-national-strategy-20260428
+/home/hadox/publications/2026/quantum-technologies-national-strategy
 ```
 
 No project symlink is maintained in `/home/hadox`; this directory is the only local working root.

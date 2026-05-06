@@ -20,8 +20,8 @@ No project symlink is maintained in `/home/hadox`; this directory is the only lo
 
 ## Public Links
 
-- GitHub: `https://github.com/ekaropolus/quantum-technologies-national-strategy`
-- Live Reveal deck: `https://ekaropolus.github.io/quantum-technologies-national-strategy/`
+- GitHub: `https://github.com/Hadox-Research-Labs/quantum-technologies-national-strategy`
+- Live Reveal deck: `https://hadox-research-labs.github.io/quantum-technologies-national-strategy/`
 
 ## Reusable Workflow
 

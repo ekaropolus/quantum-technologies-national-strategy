@@ -26,27 +26,6 @@ body {
   background-repeat: no-repeat;
 }
 
-.reveal .slides section.gitma-panel-slide {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.reveal .slides section .slide-panel {
-  display: block;
-  width: min(90vw, 1280px);
-  max-height: 82vh;
-  object-fit: contain;
-  border-radius: 6px;
-  box-shadow: 0 22px 70px rgba(3, 10, 30, 0.34);
-}
-
-.reveal .slides section.gitma-title-slide .slide-panel {
-  width: min(85vw, 1200px);
-  max-height: 76vh;
-  margin-top: 62px;
-}
-
 .deck-meta {
   position: fixed;
   z-index: 20;
@@ -58,18 +37,6 @@ body {
   gap: 24px;
   color: rgba(248, 251, 255, 0.8);
   font: 500 11px/1.2 Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  pointer-events: none;
-}
-
-.hadox-mark {
-  position: fixed;
-  z-index: 24;
-  right: 20px;
-  bottom: 28px;
-  width: 128px;
-  height: auto;
-  opacity: 0.88;
-  filter: brightness(0) invert(1);
   pointer-events: none;
 }
 
@@ -210,87 +177,8 @@ body {
   text-align: left;
 }
 
-.references-slide {
-  color: var(--ink);
-}
-
-.references-layout {
-  box-sizing: border-box;
-  display: grid;
-  grid-template-columns: minmax(0, 1.15fr) minmax(340px, 0.85fr);
-  gap: 54px;
-  width: 100%;
-  height: 100%;
-  padding: 54px 72px 60px;
-  align-items: center;
-}
-
-.references-slide .references-layout {
-  background: rgba(8, 15, 45, 0.64);
-  border: 1px solid rgba(143, 208, 255, 0.2);
-  border-radius: 10px;
-  backdrop-filter: blur(2px);
-}
-
-.references-copy .eyebrow {
-  margin: 0 0 12px;
-  color: var(--accent);
-  font-size: 18px;
-  font-weight: 800;
-  letter-spacing: 0;
-  text-transform: uppercase;
-}
-
-.references-copy h2 {
-  margin: 0 0 24px;
-  max-width: 780px;
-  color: var(--ink);
-  font-size: 46px;
-  line-height: 1.02;
-  letter-spacing: 0;
-}
-
-.references-copy ol {
-  margin: 0;
-  padding-left: 28px;
-  max-width: 850px;
-  color: rgba(248, 251, 255, 0.92);
-  font-size: 18px;
-  line-height: 1.28;
-}
-
-.references-copy li {
-  margin: 0 0 7px;
-}
-
-.references-copy .source-links {
-  margin: 24px 0 0;
-}
-
-.references-copy .source-links p {
-  margin: 0 0 6px;
-  color: rgba(248, 251, 255, 0.9);
-  font-size: 17px;
-  line-height: 1.2;
-}
-
-.references-brand {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 420px;
-  border-left: 2px solid rgba(143, 208, 255, 0.22);
-}
-
-.references-brand img {
-  width: min(420px, 82%);
-  height: auto;
-  filter: brightness(0) invert(1);
-}
-
 @media print {
   .deck-meta,
-  .hadox-mark,
   .narration-controls,
   .narration-captions {
     display: none;

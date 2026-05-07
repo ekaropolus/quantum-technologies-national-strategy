@@ -1,8 +1,9 @@
 :root {
-  --deck-bg: #f7f8f4;
-  --ink: #07162d;
-  --muted: #5b6573;
-  --accent: #138a91;
+  --deck-bg: #1a2f7a;
+  --ink: #f8fbff;
+  --muted: rgba(248, 251, 255, 0.72);
+  --accent: #8fd0ff;
+  --panel-ink: #07162d;
 }
 
 html,
@@ -25,6 +26,27 @@ body {
   background-repeat: no-repeat;
 }
 
+.reveal .slides section.gitma-panel-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reveal .slides section .slide-panel {
+  display: block;
+  width: min(90vw, 1280px);
+  max-height: 82vh;
+  object-fit: contain;
+  border-radius: 6px;
+  box-shadow: 0 22px 70px rgba(3, 10, 30, 0.34);
+}
+
+.reveal .slides section.gitma-title-slide .slide-panel {
+  width: min(85vw, 1200px);
+  max-height: 76vh;
+  margin-top: 62px;
+}
+
 .deck-meta {
   position: fixed;
   z-index: 20;
@@ -34,7 +56,7 @@ body {
   display: flex;
   justify-content: space-between;
   gap: 24px;
-  color: rgba(7, 22, 45, 0.55);
+  color: rgba(248, 251, 255, 0.8);
   font: 500 11px/1.2 Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   pointer-events: none;
 }
@@ -46,7 +68,8 @@ body {
   bottom: 28px;
   width: 128px;
   height: auto;
-  opacity: 0.78;
+  opacity: 0.88;
+  filter: brightness(0) invert(1);
   pointer-events: none;
 }
 
@@ -60,11 +83,11 @@ body {
   gap: 6px;
   max-width: calc(100vw - 36px);
   padding: 7px 8px;
-  color: rgba(7, 22, 45, 0.82);
-  background: rgba(247, 248, 244, 0.88);
-  border: 1px solid rgba(19, 138, 145, 0.2);
+  color: rgba(248, 251, 255, 0.92);
+  background: rgba(10, 19, 53, 0.72);
+  border: 1px solid rgba(143, 208, 255, 0.28);
   border-radius: 6px;
-  box-shadow: 0 8px 24px rgba(7, 22, 45, 0.08);
+  box-shadow: 0 10px 30px rgba(3, 10, 30, 0.28);
   font: 700 12px/1.1 Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
@@ -73,8 +96,8 @@ body {
   min-height: 28px;
   border: 1px solid rgba(7, 22, 45, 0.16);
   border-radius: 4px;
-  color: var(--ink);
-  background: rgba(255, 255, 255, 0.82);
+  color: #eef6ff;
+  background: rgba(255, 255, 255, 0.14);
   font: inherit;
 }
 
@@ -106,13 +129,13 @@ body {
 
 .narration-controls output {
   min-width: 34px;
-  color: rgba(7, 22, 45, 0.72);
+  color: rgba(248, 251, 255, 0.82);
   text-align: right;
 }
 
 .narration-controls [data-narration-status] {
   min-width: 54px;
-  color: rgba(7, 22, 45, 0.62);
+  color: rgba(248, 251, 255, 0.72);
 }
 
 .narration-captions {
@@ -160,9 +183,9 @@ body {
 .reveal .slide-number {
   right: 154px;
   bottom: 28px;
-  color: rgba(7, 22, 45, 0.6);
-  background: rgba(255, 255, 255, 0.68);
-  border: 1px solid rgba(7, 22, 45, 0.1);
+  color: rgba(248, 251, 255, 0.88);
+  background: rgba(10, 19, 53, 0.6);
+  border: 1px solid rgba(143, 208, 255, 0.22);
   border-radius: 4px;
   padding: 3px 7px;
   font-size: 11px;
@@ -176,9 +199,9 @@ body {
   max-width: 320px;
   box-sizing: border-box;
   padding: 6px 10px;
-  color: rgba(7, 22, 45, 0.74);
-  background: rgba(247, 248, 244, 0.82);
-  border: 1px solid rgba(19, 138, 145, 0.22);
+  color: rgba(248, 251, 255, 0.94);
+  background: rgba(10, 19, 53, 0.7);
+  border: 1px solid rgba(143, 208, 255, 0.25);
   border-radius: 4px;
   font-size: 13px;
   font-weight: 700;
@@ -200,6 +223,13 @@ body {
   height: 100%;
   padding: 54px 72px 60px;
   align-items: center;
+}
+
+.references-slide .references-layout {
+  background: rgba(8, 15, 45, 0.64);
+  border: 1px solid rgba(143, 208, 255, 0.2);
+  border-radius: 10px;
+  backdrop-filter: blur(2px);
 }
 
 .references-copy .eyebrow {
@@ -224,7 +254,7 @@ body {
   margin: 0;
   padding-left: 28px;
   max-width: 850px;
-  color: rgba(7, 22, 45, 0.86);
+  color: rgba(248, 251, 255, 0.92);
   font-size: 18px;
   line-height: 1.28;
 }
@@ -239,7 +269,7 @@ body {
 
 .references-copy .source-links p {
   margin: 0 0 6px;
-  color: var(--ink);
+  color: rgba(248, 251, 255, 0.9);
   font-size: 17px;
   line-height: 1.2;
 }
@@ -249,12 +279,13 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 420px;
-  border-left: 2px solid rgba(19, 138, 145, 0.18);
+  border-left: 2px solid rgba(143, 208, 255, 0.22);
 }
 
 .references-brand img {
   width: min(420px, 82%);
   height: auto;
+  filter: brightness(0) invert(1);
 }
 
 @media print {
